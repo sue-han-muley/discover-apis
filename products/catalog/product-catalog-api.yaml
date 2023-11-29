@@ -1,0 +1,62 @@
+---
+openapi: 3.0.0
+info:
+  title: Catalog API
+  description: This is a catalog API that makes calls from various vendor APIs.
+  version: v1
+paths:  
+  "/track":
+    servers:
+      - url: https://alpine.com/api/catalog
+    get:
+      operationId: Get Catalog information
+      parameters:
+      - name: catalogID
+        required: true
+        in: query
+        schema:
+          example: 900000106
+          type: integer
+          format: int
+      requestBody:
+        content: {}
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/unifiedCatalogResponse'
+
+components:
+  schemas:
+    unifiedCatalogResponse:
+      type: object
+      additionalProperties: true
+      required:
+      - ID
+      - Title
+      - Category
+      - Price
+      - Description
+      - Image
+      properties:
+        ID:
+          example: 1
+          type: number
+        Title:
+          example: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops'
+          type: string
+        Description:
+          example: 'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday'
+          type: string
+        Category:
+          example: 'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday'
+          type: string
+        Price:
+          example: 109.95
+          type: number
+        Image:
+          example: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'
+          type: string
