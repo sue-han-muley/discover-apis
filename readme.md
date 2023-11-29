@@ -1,1 +1,2 @@
-Example API Specifications for Anypoint API Catalog CLI Spotlight
+API Specifications and applications for Alpine Products.
+

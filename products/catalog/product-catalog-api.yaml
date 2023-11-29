@@ -3,7 +3,7 @@ openapi: 3.0.0
 info:
   title: Catalog API
   description: This is a catalog API that makes calls from various vendor APIs.
-  version: v1
+  version: v1.1
 paths:  
   "/track":
     servers:
