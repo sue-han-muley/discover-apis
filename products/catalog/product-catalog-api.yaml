@@ -1,11 +1,11 @@
 ---
 openapi: 3.0.0
 info:
-  title: Catalog API
+  title: Product Catalog API
   description: This is a catalog API that makes calls from various vendor APIs.
   version: v1.3
 paths:  
-  "/track":
+  "/catalog-info":
     servers:
       - url: https://alpine.com/api/catalog
     get:
