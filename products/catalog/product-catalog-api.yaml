@@ -3,7 +3,7 @@ openapi: 3.0.0
 info:
   title: Catalog API
   description: This is a catalog API that makes calls from various vendor APIs.
-  version: v1.2
+  version: v1.3
 paths:  
   "/track":
     servers:
@@ -52,7 +52,7 @@ components:
           example: 'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday'
           type: string
         Category:
-          example: 'men's clothing'
+          example: 'men clothing'
           type: string
         Price:
           example: 109.95
