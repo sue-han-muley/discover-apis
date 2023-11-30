@@ -52,7 +52,7 @@ components:
           example: 'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday'
           type: string
         Category:
-          example: 'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday'
+          example: 'men's clothing'
           type: string
         Price:
           example: 109.95
